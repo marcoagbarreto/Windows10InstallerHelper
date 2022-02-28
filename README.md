@@ -12,9 +12,9 @@ Script to install a list of useful programs.
 ## How to Run
 Paste this command into Powershell (admin):
 ```
-iex ((New-Object System.Net.WebClient).DownloadString('shorturl.at/hvwBF'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://tinyurl.com/2p96uvpd'))
 ```
 Or, shorter:
 ```
-iwr -useb shorturl.at/hvwBF|iex
+iwr -useb https://tinyurl.com/2p96uvpd|iex
 ```
