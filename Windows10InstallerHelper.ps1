@@ -1,5 +1,6 @@
 Read-Host -Prompt "Press ENTER to continue or CTRL+C to quit"
 
+
 <# This script uses winget to manage the install packages, 
 if winget is not installed, install it.
 #>
@@ -19,7 +20,7 @@ else{
 	Write-Host Winget Installed
 }
 
-########## Browsers
+# ----- Browsers -----
 Write-Host "Installing Firefox"
 winget install -e Mozilla.Firefox
 
@@ -29,7 +30,7 @@ winget install -e Google.Chrome
 Write-Host "Installing OperaGX"
 winget install -e Opera.OperaGX
 
-########## Office
+# ----- Office -----
 Write-Host "Installing Notepad++"
 winget install -e Notepad++.Notepad++
 
@@ -50,7 +51,7 @@ Write-Host "Installing PDFCreator"
 winget install -e pdfforge.PDFCreator
 #>
 
-########## Programming and Design
+# ----- Programming and Design -----
 <#
 Write-Host "Installing Anaconda"
 winget install -e Anaconda.Anaconda3
@@ -74,7 +75,7 @@ Write-Host "Installing OpenSCAD"
 winget install -e OpenSCAD.OpenSCAD
 #>
 
-########## Entertainment
+# ----- Entertainment -----
 Write-Host "Installing Steam"
 winget install -e Valve.Steam
 
@@ -84,7 +85,7 @@ winget install -e Spotify.Spotify
 Write-Host "Installing PopcornTime"
 winget install -e PopcornTime.PopcornTime
 
-########## Video and Image tools
+# ----- Video and Image tools -----
 Write-Host "Installing VLC Media Player"
 winget install -e VideoLAN.VLC
 
@@ -114,7 +115,7 @@ Write-Host "Installing Audacity"
 winget install -e Audacity.Audacity
 #>
 
-########## Comunications
+# ----- Comunications -----
 Write-Host "Installing Discord"
 winget install -e Discord.Discord
 
@@ -133,11 +134,11 @@ winget install -e Microsoft.Teams
 #>
 
 
-# Security
+# ----- Security -----
 Write-Host "Installing Malwarebytes"
 winget install -e Malwarebytes.Malwarebytes
 
-########## Productivity
+# ----- Productivity -----
 Write-Host "Installing ShareX Screenshot Tool"
 winget install -e ShareX.ShareX 
 
@@ -173,7 +174,7 @@ Write-Host "Installing Cura"
 winget install -e Ultimaker.Cura
 #>
 
-########## Utilities
+# ----- Utilities -----
 Write-Host "Installing WinRAR"
 winget install -e RARLab.WinRAR
 
@@ -212,7 +213,6 @@ winget install -e qBittorrent.qBittorrent
 Write-Host "Installing BCUninstaller"
 winget install -e Klocman.BulkCrapUninstaller
 #>
-
 
 
 
