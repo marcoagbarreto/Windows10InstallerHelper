@@ -1,4 +1,9 @@
-# GUI Specs
+Read-Host -Prompt "Press ENTER to continue or CTRL+C to quit"
+
+<# This script uses winget to manage the install packages, 
+if winget is not installed, install it.
+#>
+
 Write-Host "Checking winget..."
 
 # Check if winget is installed
@@ -8,7 +13,6 @@ if (Test-Path ~\AppData\Local\Microsoft\WindowsApps\winget.exe){
 else{
     # Installing winget from the Microsoft Store
 	Write-Host "Winget not found, installing it now."
-    $ResultText.text = "`r`n" +"`r`n" + "Installing Winget... Please Wait"
 	Start-Process "ms-appinstaller:?source=https://aka.ms/getwinget"
 	$nid = (Get-Process AppInstaller).Id
 	Wait-Process -Id $nid
@@ -46,7 +50,7 @@ Write-Host "Installing PDFCreator"
 winget install -e pdfforge.PDFCreator
 #>
 
-# Programming
+# Programming and Design
 <#
 Write-Host "Installing Anaconda"
 winget install -e Anaconda.Anaconda3
@@ -65,6 +69,9 @@ winget install -e ArduinoSA.IDE.rc
 
 Write-Host "Installing UnityHub"
 winget install -e UnityTechnologies.UnityHub
+
+Write-Host "Installing UnityHub"
+winget install -e OpenSCAD.OpenSCAD
 #>
 
 # Entertainment
@@ -102,6 +109,9 @@ winget install -e --id Meltytech.Shotcut
 
 Write-Host "Installing HitFilmExpress"
 winget install -e FXHOME.HitFilmExpress
+
+Write-Host "Installing Audacity"
+winget install -e Audacity.Audacity
 #>
 
 # Comunications
@@ -152,13 +162,13 @@ winget install -e Axosoft.GitKraken
 Write-Host "Installing Git"
 winget install -e Git.Git
 
-Write-Host "Installing GitHub OBSStudio"
+Write-Host "Installing OBSStudio"
 winget install -e OBSProject.OBSStudio
 
-Write-Host "Installing GitHub 1Password"
+Write-Host "Installing 1Password"
 winget install -e AgileBits.1Password
 
-Write-Host "Installing GitHub Cura"
+Write-Host "Installing Cura"
 winget install -e Ultimaker.Cura
 #>
 
@@ -171,6 +181,19 @@ Write-Host "Installing GeForceExperience"
 winget install -e --id Nvidia.GeForceExperience
 
 <#
+
+Write-Host "Installing CCleaner"
+winget install -e Piriform.CCleaner
+
+Write-Host "Installing Speccy"
+winget install -e Piriform.Speccy
+
+Write-Host "Installing CPU-Z"
+winget install -e CPUID.CPU-Z
+
+Write-Host "Installing GPU-Z"
+winget install -e TechPowerUp.GPU-Z
+
 Write-Host "Installing Etcher USB Imager"
 winget install -e Balena.Etcher 
 
@@ -183,6 +206,12 @@ winget install -e WinSCP.WinSCP
 
 Write-Host "Installing Tailscale"
 winget install -e tailscale.tailscale
+
+Write-Host "Installing qBittorrent"
+winget install -e qBittorrent.qBittorrent
+
+Write-Host "Installing BCUninstaller"
+winget install -e Klocman.BulkCrapUninstaller
 #>
 
 
