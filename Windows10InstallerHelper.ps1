@@ -19,7 +19,7 @@ else{
 	Write-Host Winget Installed
 }
 
-# Browsers
+########## Browsers
 Write-Host "Installing Firefox"
 winget install -e Mozilla.Firefox
 
@@ -29,7 +29,7 @@ winget install -e Google.Chrome
 Write-Host "Installing OperaGX"
 winget install -e Opera.OperaGX
 
-# Office
+########## Office
 Write-Host "Installing Notepad++"
 winget install -e Notepad++.Notepad++
 
@@ -37,7 +37,7 @@ Write-Host "Installing Microsoft Office"
 winget install -e Microsoft.Office
 
 <#
-Write-Host "Installing Notepad++"
+Write-Host "Installing WPSOffice"
 winget install -e Kingsoft.WPSOffice
 
 Write-Host "Installing LibreOffice"
@@ -50,7 +50,7 @@ Write-Host "Installing PDFCreator"
 winget install -e pdfforge.PDFCreator
 #>
 
-# Programming and Design
+########## Programming and Design
 <#
 Write-Host "Installing Anaconda"
 winget install -e Anaconda.Anaconda3
@@ -70,11 +70,11 @@ winget install -e ArduinoSA.IDE.rc
 Write-Host "Installing UnityHub"
 winget install -e UnityTechnologies.UnityHub
 
-Write-Host "Installing UnityHub"
+Write-Host "Installing OpenSCAD"
 winget install -e OpenSCAD.OpenSCAD
 #>
 
-# Entertainment
+########## Entertainment
 Write-Host "Installing Steam"
 winget install -e Valve.Steam
 
@@ -84,7 +84,7 @@ winget install -e Spotify.Spotify
 Write-Host "Installing PopcornTime"
 winget install -e PopcornTime.PopcornTime
 
-# Video and Image tools
+########## Video and Image tools
 Write-Host "Installing VLC Media Player"
 winget install -e VideoLAN.VLC
 
@@ -114,12 +114,13 @@ Write-Host "Installing Audacity"
 winget install -e Audacity.Audacity
 #>
 
-# Comunications
+########## Comunications
 Write-Host "Installing Discord"
 winget install -e Discord.Discord
 
-Write-Host "Installing Discord"
+Write-Host "Installing WhatsApp"
 winget install -e WhatsApp.WhatsApp
+
 <#
 Write-Host "Installing Telegram"
 winget install -e Telegram.TelegramDesktop
@@ -136,7 +137,7 @@ winget install -e Microsoft.Teams
 Write-Host "Installing Malwarebytes"
 winget install -e Malwarebytes.Malwarebytes
 
-# Productivity
+########## Productivity
 Write-Host "Installing ShareX Screenshot Tool"
 winget install -e ShareX.ShareX 
 
@@ -146,7 +147,7 @@ winget install -e Microsoft.PowerToys
 Write-Host "Installing AnyDesk"
 winget install -e AnyDeskSoftwareGmbH.AnyDesk
 
-Write-Host "Installing AnyDesk"
+Write-Host "Installing Parsec"
 winget install -e Parsec.Parsec
 
 Write-Host "Installing Google Drive"
@@ -172,8 +173,7 @@ Write-Host "Installing Cura"
 winget install -e Ultimaker.Cura
 #>
 
-# Utilities
-
+########## Utilities
 Write-Host "Installing WinRAR"
 winget install -e RARLab.WinRAR
 
@@ -181,7 +181,6 @@ Write-Host "Installing GeForceExperience"
 winget install -e --id Nvidia.GeForceExperience
 
 <#
-
 Write-Host "Installing CCleaner"
 winget install -e Piriform.CCleaner
 
@@ -197,7 +196,7 @@ winget install -e TechPowerUp.GPU-Z
 Write-Host "Installing Etcher USB Imager"
 winget install -e Balena.Etcher 
 
-Write-Host "Installing Rufus"
+Write-Host "Installing Rufus USB Imager"
 winget install -e Rufus.Rufus
 
 Write-Host "Installing PuTTY & WinSCP" 
